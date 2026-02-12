@@ -210,10 +210,33 @@ function setupCardAnimation() {
   requestAnimationFrame(updateVisibility);
 }
 
+function setupHeroCarousel() {
+  const heroCarousel = document.getElementById("hero-carousel");
+  if (!heroCarousel) return;
+
+  let currentIndex = 0;
+
+  const updateHeroCard = () => {
+    const artwork = artworks[currentIndex];
+    const card = heroCarousel.querySelector(".hero-card");
+    
+    card.innerHTML = `
+      <p class="hero-card-title">Featured work</p>
+      <p class="hero-card-name">${artwork.title}</p>
+      <p class="hero-card-info">${artwork.medium} • NGN ${artwork.price.toLocaleString("en-NG")}</p>
+    `;
+
+    currentIndex = (currentIndex + 1) % artworks.length;
+  };
+
+  setInterval(updateHeroCard, 5000);
+}
+
 function init() {
   renderProducts();
   setupWhatsApp();
   setupCardAnimation();
+  setupHeroCarousel();
 }
 
 init();

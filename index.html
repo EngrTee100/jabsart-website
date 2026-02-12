@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jabs Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">JA</span>
+        <div>
+          <p class="brand-name">Jabs Art</p>
+          <p class="brand-tag">Originals, limited prints, and commissions.</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a class="header-link" href="#collection">Collection</a>
+        <a class="header-link" href="#contact">Contact</a>
+        <button class="cart-pill" type="button" aria-live="polite">
+          <span id="cart-count">0 items</span>
+          <span id="cart-total">NGN 0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">Badagry, Lagos, Nigeria</p>
+          <h1>Collect bold African paintings and mixed media pieces.</h1>
+          <p class="hero-subtitle">
+            Browse originals, discover limited editions, and checkout instantly with WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#collection">Shop the collection</a>
+            <a class="btn btn-ghost" href="#contact">Request a commission</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="hero-swatch"></div>
+          <div class="hero-card">
+            <p class="hero-card-title">Featured work</p>
+            <p class="hero-card-name">Tortoise Historical</p>
+            <p class="hero-card-info">Original oil on canvas • NGN 150,000</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" class="section">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Collection</p>
+            <h2>Original art available for purchase.</h2>
+            <p class="section-subtitle">
+              Each piece ships with a certificate of authenticity and care guide.
+            </p>
+          </div>
+          <button class="btn btn-primary" id="whatsapp-checkout" type="button">
+            Checkout on WhatsApp
+          </button>
+        </div>
+        <div class="product-list" id="product-list"></div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>Commissions, gallery inquiries, and custom requests.</h2>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Quick Contact</h3>
+            <p class="contact-note">No forms needed. Tap a button to reach us directly.</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:ahisubolu2015@gmail.com">Email Jabs Art</a>
+              <a class="btn btn-ghost" href="https://wa.me/2347037308561" target="_blank" rel="noreferrer">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h3>Studio Contact</h3>
+            <p>ahisubolu2015@gmail.com</p>
+            <p><a href="tel:+2347037308561">+234 703 730 8561</a></p>
+            <p>21 Church Street, Torikoh, Badagry</p>
+            <div class="social-links">
+              <a href="https://instagram.com/Jabs_ahisu" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://twitter.com/Jabs_ahisu" target="_blank" rel="noreferrer">X (Twitter)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Jabs Art © 2026. Originals and commissions from Lagos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

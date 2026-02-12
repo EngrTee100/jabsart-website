@@ -1,36 +1,33 @@
 const artworks = [
   {
     id: 1,
-    title: "Tortoise Historical African Painting",
-    medium: "Original oil on canvas",
-    size: "24 x 36 inches",
-    price: 150000,
+    title: "Feel the Rhythm, Feel the Heart",
+    medium: "oil on canvas",
+    size: "18 x 36 inches",
+    price: 40000,
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
-    description: "Warm terracotta tones with coastal reflections.",
-    story: "Inspired by Badagry folklore, this piece honors the tortoise as a symbol of wit and survival.",
+      "images/Feel the Rhythm, Feel the Heart.jpeg",
+    story: "The music pours out of him, like he's bleeding emotions. Every note is real, straight from the heart. People stop and listen, and you can see the feelings hitting them, resonating deep. One woman's eyes well up with tears. The music's taken her back to a moment she thought was long gone. For a second, she and the saxophonist lock eyes, and it's like the music's connected them on a deeper level. The music fades, but the moment lingers. The feeling stays with you, a reminder that art can touch us in ways that words can't. Sometimes a melody just speaks to your soul, and that's what this is.",
   },
   {
     id: 2,
-    title: "Religious Conflict - Abstract African Painting",
+    title: "She Became the Path",
     medium: "Oil on canvas",
-    size: "20.5 x 33 inches",
+    size: "24 x 33 inches",
     price: 80000,
     image:
-      "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80",
-    description: "Layered figures and vibrant blues in motion.",
-    story: "A personal reflection on unity, told through overlapping forms and calm, healing blues.",
+      "images/She Became the Path.jpeg",
+    story: "She walked with night as her witness, Darkness did not hide her,it revealed her.                                                          Across her eyes lived the weight of many lives,souls she carried forward when fear tried to pull them back.  The stars bent into maps, and freedom whispered only to those who dared to listen.                           Behind her, chains learned the meaning of dust. Ahead, hope learned how to breathe.                                                                  She did not turn around. She did not ask permission.                      The World remembers her as history, but the night remembers her as a path to freedom.",
   },
   {
     id: 3,
-    title: "Market Drummers",
+    title: "Inside & outside",
     medium: "Acrylic on canvas",
-    size: "18 x 24 inches",
+    size: "24 x 24 inches",
     price: 95000,
     image:
-      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=900&q=80",
-    description: "Rhythm, color, and the sound of open-air markets.",
-    story: "Painted after a Saturday market performance where drums echoed across the stalls.",
+      "images/Inside & outside.jpeg",
+    story: "don't think I am like other people. I mean on some deep fundamental level. It's not just being half a twin and reading a lot and seeing fairies. It's not just being outside when they're all inside. I used to be inside. I think there's a way I stand aside and look backwards at things when they're happening which isn't normal...",
   },
   {
     id: 4,
@@ -40,7 +37,6 @@ const artworks = [
     price: 175000,
     image:
       "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
-    description: "Luminous greens with delicate metallic details.",
     story: "Celebrates the sacred Osun River with layered textures and shimmering light.",
   },
   {
@@ -51,7 +47,6 @@ const artworks = [
     price: 140000,
     image:
       "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80",
-    description: "Sun-washed plains with soft ochre gradients.",
     story: "A memory of long drives through the savanna during harmattan season.",
   },
   {
@@ -62,7 +57,6 @@ const artworks = [
     price: 115000,
     image:
       "https://images.unsplash.com/photo-1459908676235-d5f02e47d7f4?auto=format&fit=crop&w=900&q=80",
-    description: "Urban silhouettes layered with electric blues.",
     story: "Built from rooftop sketches of Lagos at dusk, when the city starts to glow.",
   },
   {
@@ -73,7 +67,6 @@ const artworks = [
     price: 195000,
     image:
       "https://images.unsplash.com/photo-1452800185063-6db5e12b8f49?auto=format&fit=crop&w=900&q=80",
-    description: "Textured palms with copper leaf highlights.",
     story: "A tribute to evening walks through palm groves in Badagry.",
   },
   {
@@ -84,7 +77,6 @@ const artworks = [
     price: 90000,
     image:
       "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
-    description: "Bold mask forms with rhythmic color blocks.",
     story: "Inspired by masquerade festivals where dance, costume, and spirit unite.",
   },
   {
@@ -95,11 +87,9 @@ const artworks = [
     price: 130000,
     image:
       "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80",
-    description: "Deep indigo washes with layered market textures.",
     story: "Captures the dye pits and textile stalls that fill the air with color.",
   },
 ];
-
 const productList = document.getElementById("product-list");
 const cartCount = document.getElementById("cart-count");
 const cartTotal = document.getElementById("cart-total");
@@ -126,7 +116,6 @@ function renderProducts() {
       <div class="product-body">
         <h3 class="product-title">${artwork.title}</h3>
         <p class="product-meta">${artwork.medium} • ${artwork.size}</p>
-        <p class="product-meta">${artwork.description}</p>
         <p class="product-story">Story: ${artwork.story}</p>
       </div>
       <div class="price-row">

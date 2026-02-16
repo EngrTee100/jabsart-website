@@ -116,7 +116,7 @@ function renderProducts() {
       <div class="product-body">
         <h3 class="product-title">${artwork.title}</h3>
         <p class="product-meta">${artwork.medium} • ${artwork.size}</p>
-        <p class="product-story">${artwork.story}</p>
+        <p class="product-story">${artwork.story.replace(/\n/g, '<br>')}</p>
       </div>
       <div class="price-row">
         <div>

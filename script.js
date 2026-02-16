@@ -4,77 +4,77 @@ const artworks = [
     title: "Feel the Rhythm, Feel the Heart",
     medium: "oil on canvas",
     size: "18 x 36 inches",
-    price: 40000,
+    price: 50000,
     image:
       "images/Feel the Rhythm, Feel the Heart.jpeg",
-    story: "The music pours out of him, like he's bleeding emotions. Every note is real, straight from the heart. People stop and listen, and you can see the feelings hitting them, resonating deep. One woman's eyes well up with tears. The music's taken her back to a moment she thought was long gone. For a second, she and the saxophonist lock eyes, and it's like the music's connected them on a deeper level. The music fades, but the moment lingers. The feeling stays with you, a reminder that art can touch us in ways that words can't. Sometimes a melody just speaks to your soul, and that's what this is.",
+    story: "The music pours out of him, like he's bleeding emotions. Every note is real, straight from the heart. People stop and listen, and you can see the feelings hitting them, resonating deep.\n\n One woman's eyes well up with tears. The music's taken her back to a moment she thought was long gone. For a second, she and the saxophonist lock eyes, and it's like the music's connected them on a deeper level.\n\n The music fades, but the moment lingers. The feeling stays with you, a reminder that art can touch us in ways that words can't. Sometimes a melody just speaks to your soul, and that's what this is.",
   },
   {
     id: 2,
     title: "She Became the Path",
     medium: "Oil on canvas",
     size: "24 x 33 inches",
-    price: 80000,
+    price: 60000,
     image:
       "images/She Became the Path.jpeg",
-    story: "She walked with night as her witness, Darkness did not hide her,it revealed her.                                                          Across her eyes lived the weight of many lives,souls she carried forward when fear tried to pull them back.  The stars bent into maps, and freedom whispered only to those who dared to listen.                           Behind her, chains learned the meaning of dust. Ahead, hope learned how to breathe.                                                                  She did not turn around. She did not ask permission.                      The World remembers her as history, but the night remembers her as a path to freedom.",
+    story: "She walked with night as her witness.\n Darkness did not hide her,it revealed her.\n\n Across her eyes lived the weight of many lives, souls she carried forward when fear tried to pull them back.The stars bent into maps, and freedom whispered only to those who dared to listen.\n\n Behind her, chains learned the meaning of dust.\n Ahead, hope learned how to breathe.   \n\nShe did not turn around. \nShe did not ask permission. \n\nThe World remembers her as history, but the night remembers her as a path to freedom.",
   },
   {
     id: 3,
     title: "Inside & outside",
     medium: "Acrylic on canvas",
     size: "24 x 24 inches",
-    price: 95000,
+    price: 60000,
     image:
       "images/Inside & outside.jpeg",
     story: "don't think I am like other people. I mean on some deep fundamental level. It's not just being half a twin and reading a lot and seeing fairies. It's not just being outside when they're all inside. I used to be inside. I think there's a way I stand aside and look backwards at things when they're happening which isn't normal...",
   },
   {
     id: 4,
-    title: "Osun River Light",
-    medium: "Mixed media on canvas",
-    size: "30 x 40 inches",
-    price: 175000,
+    title: "Visionary",
+    medium: "Oil on canvas",
+    size: "30 x 36 inches",
+    price: 60000,
     image:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
-    story: "Celebrates the sacred Osun River with layered textures and shimmering light.",
+      "images/Visionary.jpeg",
+    story: "I stand in two forms.\n One in color — bold, broken, becoming.\n Every shade a dream. Every edge a lesson. \n One in grey — quiet, careful, controlled. \n The version the world accepts.\n\n Between us is not a wall.\nIt’s a choice. \n\n Shrink to fit…\nor rise in color.\n\n Today, I choose to be seen.",
   },
   {
     id: 5,
-    title: "Savanna Reverie",
+    title: "Influence of African Sculpture",
     medium: "Oil on canvas",
-    size: "24 x 30 inches",
-    price: 140000,
+    size: "4 x 4 ft",
+    price: 50000,
     image:
-      "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80",
-    story: "A memory of long drives through the savanna during harmattan season.",
+      "images/Influence of African Sculpture.jpeg",
+    story: "Before the paint touched the canvas, the ancestors had already spoken.\n\n Their voices lived in carved wood — in masks with watchful eyes, in faces shaped not for beauty, but for meaning. They told stories of strength, spirit, and identity.\n\n Now, those same faces rise again — not from wood, but from bold blocks of color. Red for power. Black for mystery. Gold for royalty. Each shape echoes the hands of the sculptor who once carved stories into timber under an open African sky.\n\n This artwork is not just modern design. \n\n It is memory — reshaped. \n\n The spirit of African sculpture lives on, no longer in wood alone, but in color, rhythm, and fearless expression.",
   },
   {
     id: 6,
-    title: "Eko Skyline Studies",
-    medium: "Acrylic on canvas",
-    size: "20 x 28 inches",
-    price: 115000,
+    title: "Silent Strength",
+    medium: "Oil on canvas",
+    size: "20 x 25 cm",
+    price: 40000,
     image:
-      "https://images.unsplash.com/photo-1459908676235-d5f02e47d7f4?auto=format&fit=crop&w=900&q=80",
-    story: "Built from rooftop sketches of Lagos at dusk, when the city starts to glow.",
+      "images/Silent Strength.jpeg",
+    story: "She closes her eyes and the world grows quiet.\n\n Not because there is no noise — but because she has found peace within it.\n In the stillness, she gathers her strength, her memories, her prayers.\n\n The shadows do not hide her. They protect her. \n\n And in that calm moment, she becomes unshakable — powerful not by force, but by knowing who she is.",
   },
   {
     id: 7,
-    title: "Palm Grove Dusk",
-    medium: "Mixed media on canvas",
-    size: "32 x 40 inches",
-    price: 195000,
+    title: "Edge of Tomorrow",
+    medium: "oil paint",
+    size: "20 x 25 inches",
+    price: 40000,
     image:
-      "https://images.unsplash.com/photo-1452800185063-6db5e12b8f49?auto=format&fit=crop&w=900&q=80",
-    story: "A tribute to evening walks through palm groves in Badagry.",
+      "images/Edge of Tomorrow.jpeg",
+    story: "They gather where wood meets water — at the edge between safety and courage.\n\n The bridge holds their weight, but it is the river that holds their dreams.\n Some sit and watch, measuring the depth. Some stand tall, pretending they are not afraid. One leans forward, ready to leap — not just into water, but into possibility. \n\n They are boys today — laughing, daring, balancing between childhood and manhood. \n\n The water below reflects more than their bodies. It reflects their futures — uncertain, wide, and waiting. \n\n “Edge of Tomorrow” is a moment suspended in youth. A reminder that before every man learns to swim through life, he must first stand at the edge… and decide to jump.",
   },
   {
     id: 8,
     title: "Festival Masks",
     medium: "Acrylic on canvas",
     size: "18 x 24 inches",
-    price: 90000,
+    price: 50000,
     image:
       "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
     story: "Inspired by masquerade festivals where dance, costume, and spirit unite.",
@@ -84,7 +84,7 @@ const artworks = [
     title: "Indigo Market",
     medium: "Oil on canvas",
     size: "22 x 30 inches",
-    price: 130000,
+    price: 70000,
     image:
       "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80",
     story: "Captures the dye pits and textile stalls that fill the air with color.",
@@ -116,10 +116,13 @@ function renderProducts() {
       <div class="product-body">
         <h3 class="product-title">${artwork.title}</h3>
         <p class="product-meta">${artwork.medium} • ${artwork.size}</p>
-        <p class="product-story">Story: ${artwork.story}</p>
+        <p class="product-story">${artwork.story}</p>
       </div>
       <div class="price-row">
-        <span>${formatPrice(artwork.price)}</span>
+        <div>
+          <span style="display: block; font-weight: 700; color: var(--teal-dark);">${formatPrice(artwork.price)}</span>
+          <span style="display: block; font-size: 0.8rem; color: var(--muted); margin-top: 2px;">Prices are negotiable</span>
+        </div>
         <button type="button">Add to cart</button>
       </div>
     `;

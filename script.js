@@ -111,7 +111,7 @@ function renderProducts() {
     card.style.transitionDelay = `${index * 0.08}s`;
     card.innerHTML = `
       <div class="product-media">
-        <img src="${artwork.image}" alt="${artwork.title}" loading="lazy" />
+        <img class="product-image" src="${artwork.image}" alt="${artwork.title}" loading="lazy" data-title="${artwork.title}" data-medium="${artwork.medium}" data-size="${artwork.size}" />
       </div>
       <div class="product-body">
         <h3 class="product-title">${artwork.title}</h3>
@@ -127,6 +127,7 @@ function renderProducts() {
       </div>
     `;
     card.querySelector("button").addEventListener("click", () => addToCart(artwork));
+    card.querySelector(".product-image").addEventListener("click", () => openImageModal(artwork));
     productList.appendChild(card);
   });
 }
@@ -235,11 +236,57 @@ function setupHeroCarousel() {
   setInterval(updateHeroCard, 5000);
 }
 
+function openImageModal(artwork) {
+  let modal = document.getElementById("image-modal");
+  
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "image-modal";
+    modal.className = "image-modal";
+    modal.innerHTML = `
+      <div class="image-modal-content">
+        <button class="image-modal-close" aria-label="Close">&times;</button>
+        <img src="" alt="" />
+        <div class="image-modal-caption"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+    
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeImageModal();
+    });
+    
+    modal.querySelector(".image-modal-close").addEventListener("click", closeImageModal);
+  }
+  
+  const img = modal.querySelector("img");
+  const caption = modal.querySelector(".image-modal-caption");
+  
+  img.src = artwork.image;
+  img.alt = artwork.title;
+  caption.textContent = `${artwork.title} • ${artwork.medium} • ${artwork.size}`;
+  
+  modal.classList.add("active");
+  document.body.classList.add("modal-open");
+}
+
+function closeImageModal() {
+  const modal = document.getElementById("image-modal");
+  if (modal) {
+    modal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
+}
+
 function init() {
   renderProducts();
   setupWhatsApp();
   setupCardAnimation();
   setupHeroCarousel();
+  
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeImageModal();
+  });
 }
 
 init();

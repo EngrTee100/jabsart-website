@@ -323,6 +323,8 @@ main {
   margin-top: 0.4rem;
   color: var(--ink);
   font-size: 0.95rem;
+  white-space: pre-line;
+  line-height: 1.7;
 }
 
 .price-row {
